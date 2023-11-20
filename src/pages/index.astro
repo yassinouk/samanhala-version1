@@ -1,0 +1,32 @@
+---
+import Accordion from "../components/Accordion.vue";
+import WithoffsetImage from "../components/WithoffsetImage.astro";
+import ContentSections from "../ContentSections.astro";
+import FAQ from "../FAQ.astro";
+import Form from "../components/Form.astro";
+import Footer from "../Footer.astro";
+import CardContent from "../components/CardContent.astro";
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<ViewTransitions />
+	</head>
+	<body>
+		<main>
+			<WithoffsetImage />
+			<Accordion client:load/>
+<!-- 			<ContentSections />
+			<CardContent />
+			<FAQ />-->
+			<Form /> 
+			<Footer />
+		</main>
+	</body>
+</html>
