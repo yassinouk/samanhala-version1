@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-900">
-    <div class="mx-auto px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+  <div class="bg-[#134241]">
+    <div class="mx-auto px-6 py-24 sm:py-10 lg:px-8 lg:pt-20 lg:pb-40">
       <div class="mx-auto max-w-4xl divide-y divide-white/10">
         <h1 class="text-4xl font-bold leading-10 tracking-tight text-white">Questions Fréquemment Posées</h1>
         <dl class="mt-10 space-y-6 divide-y divide-white/10">
