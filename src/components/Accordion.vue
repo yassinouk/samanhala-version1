@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-[#134241]">
-    <div class="mx-auto px-6 py-24 sm:py-10 lg:px-8 lg:pt-20 lg:pb-40">
+  <div id="faq" class="bg-[#134241]">
+    <div class="mx-auto px-6 py-24 sm:py-10 lg:px-8 lg:pt-20 lg:pb-20">
       <div class="mx-auto max-w-4xl divide-y divide-white/10">
         <h1 class="text-4xl font-bold leading-10 tracking-tight text-white">Questions Fréquemment Posées</h1>
         <dl class="mt-10 space-y-6 divide-y divide-white/10">
@@ -44,6 +44,5 @@ const faqs = [
     question: "Quelles sont les options de personnalisation?",
     answer: "Notre approche personnalisée chez Samanhla Garden prend en compte l'environnement unique de chaque client, assurant que les plantes sélectionnées prospèrent dans chaque espace. Nous offrons une solution présentée dans un cadre similaire à une œuvre d'art, offrant aux clients la possibilité de personnaliser le cadre pour correspondre à leur style et à leur décor. De plus, nous élaborons une conception et un système sur mesure pour chaque projet, mettant l'accent sur la personnalisation. Cela inclut le choix de l'emplacement idéal, la sélection des plantes appropriées, et le type d'éclairage adapté, garantissant ainsi une solution unique qui répond pleinement aux besoins individuels de nos clients.",
   },
-  // Add more FAQs as needed...
 ];
 </script>
