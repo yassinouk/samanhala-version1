@@ -3,24 +3,36 @@ import WithoffsetImage from "../components/WithoffsetImage.astro";
 import Accordion from "../components/Accordion.vue";
 import Form from "../components/Form.astro";
 import Footer from "../Footer.astro";
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <html lang="fr" class="scroll-smooth">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>SAMANHALA GARDEN</title>
-		<ViewTransitions />
-	</head>
-	<body>
-		<main>
-			<WithoffsetImage />
-			<Accordion client:load/>
-			<Form /> 
-			<Footer />
-		</main>
-	</body>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVS5JHSY4E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JVS5JHSY4E");
+    </script>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>SAMANHALA GARDEN</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <main>
+      <WithoffsetImage />
+      <Accordion client:load />
+      <Form />
+      <Footer />
+    </main>
+  </body>
 </html>
