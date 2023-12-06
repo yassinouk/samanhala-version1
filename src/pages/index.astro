@@ -8,14 +8,42 @@ import { ViewTransitions } from "astro:transitions";
 
 <html lang="fr">
   <head>
+    <!-- High Priority Global Metadata -->
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
     <title>SAMANHALA GARDEN</title>
-    <meta name="description" content="Samanhala Garden est un jardin de 2 hectares situé à 10 minutes de la ville de Saint-Lô. Il est composé de 3 jardins : un jardin japonais, un jardin à la française et un jardin à l'anglaise." />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#134241">
+    <!-- Low Priority Global Metadata -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="mask-icon" href="/favicon.svg" color="#8D46E7">
+    <link rel="sitemap" href="/sitemap-index.xml">
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline';" /> -->
+    <!-- Font preloads 
+      <link rel="preload" href="/fonts/Obviously/Obviously Normal/Web/Obviously-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+      <link rel="preload" href="/fonts/MDIO/Web/MDIO0.6-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+      <link rel="preload" href="/_astro/inter-latin-wght-normal.450f3ba4.woff2" as="font" type="font/woff2" crossorigin="">
+    -->
+    <!-- Page Metadata -->
+    <link rel="canonical" href="https://www.samanhalagarden.ma/">
+    <meta name="description" content="Samanhla Garden, expert en murs végétaux au Maroc, se distingue par la création et l'installation de murs végétaux naturels. Transformez votre espace avec nos créations uniques, alliant nature, esthétique, et durabilité. Plongez dans une oasis de bien-être aux vertus exceptionnelles, allant de l'isolation thermique et sonore, la purification de l'air, ainsi que des économies d'eau et d'espace. Découvrez des solutions personnalisées pour verdir votre domicile, bureau, partout. Expérimentez le luxe d'une verdure artistique, sur mesure pour répondre à vos besoins. Lancez-vous dans une aventure verte avec Samanhla Garden.">
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="samanhalagarden">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://astro.build/">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="Samanhla Garden, expert en murs végétaux au Maroc, se distingue par la création et l'installation de murs végétaux naturels. Transformez votre espace avec nos créations uniques, alliant nature, esthétique, et durabilité. Plongez dans une oasis de bien-être aux vertus exceptionnelles, allant de l'isolation thermique et sonore, la purification de l'air, ainsi que des économies d'eau et d'espace. Découvrez des solutions personnalisées pour verdir votre domicile, bureau, partout. Expérimentez le luxe d'une verdure artistique, sur mesure pour répondre à vos besoins. Lancez-vous dans une aventure verte avec Samanhla Garden.">
+    <meta property="og:site_name" content="Astro">
+    <meta property="og:image" content="https://astro.build/og/astro.jpg">
+    <meta property="og:image:alt" content="Astro - Build the web you want.">
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="samanhalagarden">
+    <meta name="twitter:title" content="Astro">
+    <meta name="twitter:description" content="Astro builds fast content sites, powerful web applications, dynamic server APIs, and everything in-between.">
+    <meta name="twitter:image" content="https://astro.build/og/astro.jpg">
+    <meta name="twitter:image:alt" content="Astro - Build the web you want.">
+    <ViewTransitions />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVS5JHSY4E">
     </script>
@@ -28,24 +56,7 @@ import { ViewTransitions } from "astro:transitions";
 
       gtag("config", "G-JVS5JHSY4E");
     </script>
-    <ViewTransitions />
   </head>
-  <head>
-    <!-- High Priority Global Metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Astro</title>
-    <meta name="generator" content="Astro v3.0.9">
-    <meta name="theme-color" content="#8D46E7">
-    <!-- Fathom - beautiful, simple website analytics -->
-    <!-- <script src="https://cdn.usefathom.com/script.js" data-site="EZBHTSIG" defer=""></script> -->
-    <!-- Font preloads 
-    <link rel="preload" href="/fonts/Obviously/Obviously Normal/Web/Obviously-Regular.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="/fonts/MDIO/Web/MDIO0.6-Regular.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="/_astro/inter-latin-wght-normal.450f3ba4.woff2" as="font" type="font/woff2" crossorigin="">
-    -->
-    <!-- Low Priority Global Metadata -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="mask-icon" href="/favicon.svg" color="#8D46E7"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS"><!-- Page Metadata --><link rel="canonical" href="https://astro.build/"><meta name="description" content="Astro builds fast content sites, powerful web applications, dynamic server APIs, and everything in-between."><!-- OpenGraph Tags --><meta property="og:title" content="Astro"><meta property="og:type" content="website"><meta property="og:url" content="https://astro.build/"><meta property="og:locale" content="en"><meta property="og:description" content="Astro builds fast content sites, powerful web applications, dynamic server APIs, and everything in-between."><meta property="og:site_name" content="Astro"><meta property="og:image" content="https://astro.build/og/astro.jpg"><meta property="og:image:alt" content="Astro - Build the web you want."><!-- Twitter Tags --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="astrodotbuild"><meta name="twitter:title" content="Astro"><meta name="twitter:description" content="Astro builds fast content sites, powerful web applications, dynamic server APIs, and everything in-between."><meta name="twitter:image" content="https://astro.build/og/astro.jpg"><meta name="twitter:image:alt" content="Astro - Build the web you want."></head>
   <body>
     <main class="scroll-smooth">
       <WithoffsetImage />
