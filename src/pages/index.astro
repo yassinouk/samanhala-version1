@@ -6,30 +6,53 @@ import Footer from "../Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 ---
 
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
   <head>
+    <!-- High Priority Global Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SAMANHALA GARDEN</title>
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#134241">
+    <!-- Low Priority Global Metadata -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="mask-icon" href="/favicon.svg" color="#8D46E7">
+    <link rel="sitemap" href="/sitemap-index.xml">
+    <!-- Page Metadata -->
+    <link rel="canonical" href="https://www.samanhalagarden.ma/">
+    <meta name="description" content="Samanhala Garden, expert en murs végétaux au Maroc, se distingue par la création et l'installation de murs végétaux naturels. Transformez votre espace avec nos créations uniques, alliant nature, esthétique, et durabilité. Plongez dans une oasis de bien-être aux vertus exceptionnelles, allant de l'isolation thermique et sonore, la purification de l'air, ainsi que des économies d'eau et d'espace. Découvrez des solutions personnalisées pour verdir votre domicile, bureau, partout. Expérimentez le luxe d'une verdure artistique, sur mesure pour répondre à vos besoins. Lancez-vous dans une aventure verte avec Samanhala Garden.">
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="SAMANHALA GARDEN">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.samanhalagarden.ma/">
+    <meta property="og:locale" content="fr">
+    <meta property="og:description" content="Samanhala Garden, expert en murs végétaux au Maroc, se distingue par la création et l'installation de murs végétaux naturels. Transformez votre espace avec nos créations uniques, alliant nature, esthétique, et durabilité. Plongez dans une oasis de bien-être aux vertus exceptionnelles, allant de l'isolation thermique et sonore, la purification de l'air, ainsi que des économies d'eau et d'espace. Découvrez des solutions personnalisées pour verdir votre domicile, bureau, partout. Expérimentez le luxe d'une verdure artistique, sur mesure pour répondre à vos besoins. Lancez-vous dans une aventure verte avec Samanhala Garden.">
+    <meta property="og:site_name" content="samanhalagarden">
+    <meta property="og:image" content="https://www.samanhalagarden.ma/logo.png">
+    <meta property="og:image:alt" content="Avec Samanhala garden, découvrez des solutions personnalisées pour verdir votre domicile, bureau, partout.">
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="samanhalagarden">
+    <meta name="twitter:title" content="SamanhalaGarden">
+    <meta name="twitter:description" content="Samanhala Garden 🌱, expert des murs végétaux naturels au Maroc. créations naturelles uniques 🌿, esthétiques et écologiques ♻️.">
+    <meta name="twitter:image" content="https://www.samanhalagarden.ma/logo.png">
+    <meta name="twitter:image:alt" content="Samanhala Garden, expert des murs végétaux naturels au Maroc. créations naturelles uniques, esthétiques et écologiques.">
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVS5JHSY4E"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVS5JHSY4E">
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
+      
       gtag("config", "G-JVS5JHSY4E");
-    </script>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <meta name="generator" content={Astro.generator} />
-    <title>SAMANHALA GARDEN</title>
-    <ViewTransitions />
+      </script>
+      <ViewTransitions />
   </head>
   <body>
-    <main>
+    <main class="scroll-smooth">
       <WithoffsetImage />
       <Accordion client:load />
       <Form />
